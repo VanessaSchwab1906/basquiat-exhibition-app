@@ -1,0 +1,83 @@
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import logo from "../assets/crown.jpeg";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+
+const options = ["biography", "works", "games", "impressum"];
+
+export default function Navbar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "#b78a9f ", color: "##b78a9f " }}
+      >
+        <Toolbar variant="dense">
+          <Link to="">
+            <img src={logo} alt="logo" style={{ maxWidth: "50px" }} />
+          </Link>
+          <IconButton
+            edge="end"
+            color="#fff"
+            aria-label="menu"
+            aria-haspopup="true"
+            onClick={handleClick}
+            sx={{ marginLeft: "auto" }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            open={open}
+            onClose={handleClose}
+          >
+            {options.map((option) => (
+              <MenuItem key={option} onClick={handleClose}>
+                <Link
+                  to={`/${option.toLowerCase()}`}
+                  style={{
+                    textDecoration: "none",
+                    color: "#000",
+                  }}
+                  className="menu-item__link"
+                >
+                  {option}
+                </Link>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
