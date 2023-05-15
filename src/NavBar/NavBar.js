@@ -2,13 +2,11 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../assets/crown/yellow_crown.png";
+import logo from "../assets/crown/orange_crown.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
@@ -60,6 +58,11 @@ export default function Navbar() {
             }}
             open={open}
             onClose={handleClose}
+            sx={{
+              "& .MuiMenu-paper": {
+                backgroundColor: "#8cabd9",
+              },
+            }}
           >
             {options.map((option) => (
               <MenuItem key={option} onClick={handleClose}>
