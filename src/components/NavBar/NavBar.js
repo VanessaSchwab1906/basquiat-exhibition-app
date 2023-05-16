@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../assets/crown/orange_crown.png";
+import logo from "../../assets/images/crown/orange_crown.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
@@ -28,7 +28,7 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        sx={{ backgroundColor: "#8CABD9", color: "#1D4DgF" }}
+        sx={{ backgroundColor: "#a3bce1", color: "#1D4DgF" }}
       >
         <Toolbar variant="dense">
           <Link to="/">

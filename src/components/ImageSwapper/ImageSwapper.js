@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import key1 from "../assets/key_1.png";
-import key2 from "../assets/key_2.png";
+import key1 from "../../assets/images/visual/key_1.png";
+import key2 from "../../assets/images/visual/key_2.png";
 
 const images = [key1, key2];
 

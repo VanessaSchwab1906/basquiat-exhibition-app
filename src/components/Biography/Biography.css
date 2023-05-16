@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Basquiat Font";
-  src: url("../fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf") format("opentype");
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
