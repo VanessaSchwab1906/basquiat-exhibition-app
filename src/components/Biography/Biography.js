@@ -1,5 +1,6 @@
 import "./Biography.css";
 import { Chrono } from "react-chrono";
+import { useEffect, useState } from "react";
 
 const items = [
   {
@@ -48,7 +49,7 @@ const items = [
     title: "1985",
     cardTitle: "Breaking Boundaries ",
     cardDetailedText:
-      "BBasquiat's success continues to rise, and he becomes one of the youngest artists to be featured in a solo exhibition at the Whitney Museum of American Art in New York.",
+      "Basquiat's success continues to rise, and he becomes one of the youngest artists to be featured in a solo exhibition at the Whitney Museum of American Art in New York.",
   },
   {
     title: "1987",
@@ -62,26 +63,30 @@ function ChronoTimeline() {
   return (
     <>
       <h1 className="biography__headline">biography</h1>
-      <Chrono
-        items={items}
-        mode="VERTICAL_ALTERNATING"
-        cardHeight={100}
-        mediaHeight={200}
-        theme={{
-          primary: "#000000", // primary color of timeline
-          secondary: "", // secondary color of timeline
-          cardBgColor: "#f9c1cd", // backgroundcolor of card
-          cardTitleColor: "#000000",
-          cardSubtitleColor: "#000000", // subtitle color of card
-          titleColor: "#000000", // title color of card
-          titleColorActive: "#000000",
-        }}
-        fontSizes={{
-          cardText: "1.3rem",
-          cardTitle: "1.5rem",
-          title: "2rem",
-        }}
-      />
+      <div className="chrono">
+        <Chrono
+          items={items}
+          mode="VERTICAL_ALTERNATING"
+          cardHeight={120}
+          mediaHeight={200}
+          slideShow
+          slideItemDuration={2000}
+          theme={{
+            primary: "#000000", // primary color of timeline
+            secondary: "", // secondary color of timeline
+            cardBgColor: "#f9c1cd", // backgroundcolor of card
+            cardTitleColor: "#000000",
+            cardSubtitleColor: "#000000", // subtitle color of card
+            titleColor: "#000000", // title color of card
+            titleColorActive: "#000000",
+          }}
+          fontSizes={{
+            cardTitle: "1.3rem",
+            title: "2rem",
+            cardText: "1.5rem",
+          }}
+        />
+      </div>
     </>
   );
 }
