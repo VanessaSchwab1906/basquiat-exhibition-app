@@ -1,6 +1,5 @@
 import "./Biography.css";
 import { Chrono } from "react-chrono";
-import { useEffect, useState } from "react";
 
 const items = [
   {
@@ -70,7 +69,7 @@ function ChronoTimeline() {
           cardHeight={120}
           mediaHeight={200}
           slideShow
-          slideItemDuration={2000}
+          slideItemDuration={1000}
           theme={{
             primary: "#000000", // primary color of timeline
             secondary: "", // secondary color of timeline
