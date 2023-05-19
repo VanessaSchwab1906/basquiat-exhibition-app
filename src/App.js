@@ -3,8 +3,10 @@ import Navbar from "./components/NavBar/NavBar";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Biography from "./components/Biography/Biography";
-import Works from "./components/Exhibition/Exhibition";
+import Map from "./components/ExhibitionMap/ExhibitionMap";
 import Games from "./components/Games/Games";
+import MemoryGame from "./components/MemoryGame/MemoryGame";
+import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 import Impressum from "./components/Impressum /Impressum";
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/biography" element={<Biography />} />
-          <Route path="/exhibition" element={<Works />} />
+          <Route path="/exhibition" element={<Map />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/memory" element={<MemoryGame />} />
+          <Route path="/built-your-own-basquiat" element={<DragAndDrop />} />
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
       </BrowserRouter>

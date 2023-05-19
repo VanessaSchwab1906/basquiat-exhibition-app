@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./Exhibition.css";
+import "./ExhibitionMap.css";
 import map from "../../assets/images/map/demo_map.jpg";
 
-export default function Exhibition() {
+export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
 
   const handleLocationClick = (location) => {
