@@ -7,6 +7,7 @@ import Map from "./components/ExhibitionMap/ExhibitionMap";
 import Games from "./components/Games/Games";
 import MemoryGame from "./components/MemoryGame/MemoryGame";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
+import Events from "./components/Events/Events";
 import Impressum from "./components/Impressum /Impressum";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/memory" element={<MemoryGame />} />
           <Route path="/built-your-own-basquiat" element={<DragAndDrop />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
       </BrowserRouter>

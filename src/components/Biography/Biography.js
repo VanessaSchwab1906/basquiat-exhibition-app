@@ -101,7 +101,8 @@ function ChronoTimeline() {
   const theme = {
     primary: "#000000",
     secondary: "",
-    cardBgColor: "#f9c1cd",
+    // cardBgColor: "#f9c1cd",
+    cardBgColor: "#8CABD9",
     cardTitleColor: "#000000",
     cardSubtitleColor: "#000000",
     titleColor: "#000000",

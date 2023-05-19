@@ -28,16 +28,6 @@
   height: 100vh;
 }
 
-.box__link {
-  text-decoration: none;
-}
-
-.box__decoration {
-  font-size: 40px;
-  text-align: center;
-  color: #f08838;
-}
-
 .box {
   display: flex;
   flex-direction: column;
@@ -55,4 +45,20 @@
   cursor: pointer;
   color: black;
   border-radius: 7px;
+  box-shadow: 7px 7px 0px -2px #f1ec7a;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box__link {
+  text-decoration: none;
+}
+
+.box__decoration {
+  font-size: 40px;
+  text-align: center;
+  color: #f08838;
 }

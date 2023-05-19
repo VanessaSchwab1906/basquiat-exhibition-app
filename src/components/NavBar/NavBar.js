@@ -10,7 +10,7 @@ import logo from "../../assets/images/crown/orange_crown.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const options = ["biography", "exhibition", "games", "impressum"];
+const options = ["biography", "exhibition", "games", "events", "impressum"];
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -60,7 +60,7 @@ export default function Navbar() {
             onClose={handleClose}
             sx={{
               "& .MuiMenu-paper": {
-                backgroundColor: "#8cabd9",
+                backgroundColor: "#a3bce1",
               },
             }}
           >
