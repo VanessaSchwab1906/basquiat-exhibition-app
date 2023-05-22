@@ -15,7 +15,9 @@
 }
 
 .exhibition__map {
-  box-shadow: 7px 7px 0px -2px #f1ec7a;
+  /* border: 2px solid black; */
+  /* box-shadow: 7px 7px 0px -2px #f1ec7a; */
+  border-style: groove;
 }
 
 .location-wrapper {
@@ -30,4 +32,47 @@
 .exhibition__location {
   font-family: "Basquiat Font", sans-serif;
   font-size: 30px;
+}
+
+.exhibition__details {
+  margin: 25px;
+}
+
+.exhibition__details-name {
+  font-family: "Basquiat Font", sans-serif;
+  background-color: #f1ec7a;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.exhibition__details-title {
+  font-family: "Basquiat Font", sans-serif;
+  font-style: bolder;
+  font-size: 25px;
+}
+
+.exhibition__details-text {
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #8e8986;
+}
+
+.exhibition__details-info {
+  text-align: center;
+  font-size: 20px;
+  font-style: bolder;
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.exhibition__details-imagecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.exhibition__details-artwork {
+  width: 300px;
+  height: 300px;
 }

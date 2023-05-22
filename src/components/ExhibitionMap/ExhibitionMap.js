@@ -1,13 +1,18 @@
 import { useState } from "react";
 import "./ExhibitionMap.css";
 import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
-import darkblueMap2 from "../../assets/images/map/map-darkblue-colors.JPG";
-import darkblueMap3 from "../../assets/images/map/map-darkblue.JPG";
-import lightblueMap from "../../assets/images/map/map-lightblue-colors.JPG";
-import lightblueMap2 from "../../assets/images/map/map-lightblue.JPG";
-import orangeMap from "../../assets/images/map/map-orange.JPG";
-import pinkMap from "../../assets/images/map/map-pink.JPG";
-import yellowMap from "../../assets/images/map/map-yellow.JPG";
+// import darkblueMap2 from "../../assets/images/map/map-darkblue-colors.JPG";
+// import darkblueMap3 from "../../assets/images/map/map-darkblue.JPG";
+// import lightblueMap from "../../assets/images/map/map-lightblue-colors.JPG";
+// import lightblueMap2 from "../../assets/images/map/map-lightblue.JPG";
+// import orangeMap from "../../assets/images/map/map-orange.JPG";
+// import pinkMap from "../../assets/images/map/map-pink.JPG";
+// import yellowMap from "../../assets/images/map/map-yellow.JPG";
+import skull from "../../assets/images/map/Skull_1981.jpeg";
+import cadillac from "../../assets/images/map/CadillacMoon_1981.jpeg";
+import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpeg";
+import heads from "../../assets/images/map/TwoHeads_1982.jpeg";
+import police from "../../assets/images/map/Policeman_1981.jpeg";
 
 export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -20,57 +25,62 @@ export default function ExhibitionMap() {
     {
       id: 1,
       name: "1",
-      title: "Introduction",
+      title: "introduction",
       description:
-        "Begin the exhibition with an introductory section that provides an overview of Basquiat's life, artistic career, and major influences. Include a brief biography and highlight key milestones in his artistic journey.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Overview of Basquiat's life, artistic career, and major influences, including a brief biography and key milestones in his artistic journey.",
+      img: skull,
+      info: "untitled (skull), 1981",
       x: 50,
       y: 130,
     },
     {
       id: 2,
       name: "2",
-      title: "Early Influences",
+      title: "early influences",
       description:
-        "Explore the early influences on Basquiat's work, such as his exposure to graffiti, street art, and urban culture in New York City. Include early sketches, photographs, and other materials that showcase his development as an artist.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Explore the early influences on Basquiat's work, such as his exposure to graffiti, street art, and urban culture in New York City.",
+      img: cadillac,
+      info: "untitled (cadillac moon), 1981",
       x: 150,
-      y: 0,
+      y: 5,
     },
     {
       id: 3,
       name: "3",
-      title: "Themes and Motifs",
+      title: "themes and motifs",
       description:
-        "Dedicate sections to explore the recurring themes and motifs in Basquiat's work. This can include sections on social commentary, cultural references, personal identity, and art historical influences. Display a variety of artworks that exemplify each theme, accompanied by informative panels.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Explore the recurring themes, including social commentary, cultural references, personal identity and art historical influences of Basquiat.",
+      img: hollywood,
+      info: "hollywood africans, 1983",
       x: 240,
       y: 60,
     },
     {
       id: 4,
       name: "4",
-      title: "Collaborations and Connections",
+      title: "collaborations and connections",
       description:
-        "Highlight Basquiat's collaborations with other artists, musicians, and cultural figures. Include artworks and archival materials related to his collaborations with Andy Warhol, Keith Haring, and other prominent artists of the time.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Explore Basquiat's collaborations with Andy Warhol, Keith Haring and other prominent artists of the time.",
+      img: heads,
+      info: "doz cabezas, 1982",
       x: 400,
-      y: 0,
+      y: 5,
     },
     {
       id: 5,
       name: "5",
-      title: "Techniques and Materials",
+      title: "techniques and materials",
       description:
-        "Offer insight into Basquiat's artistic techniques and materials. Include examples of his use of mixed media, collage, text, and experimental approaches. Display sketches, preparatory drawings, and samples of the materials he employed.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Insight into Basquiat's artistic techniques and materials, including examples of his use of mixed media, collage, text, and experimental approaches.",
+      img: police,
+      info: "irony of negro policeman, 1981",
       x: 350,
       y: 125,
     },
     {
       id: 6,
       name: "6",
-      title: "Cultural Context",
+      title: "cultural context",
       description:
         "Provide a section that explores the cultural and historical context in which Basquiat's work emerged. Discuss the socio-political climate of the 1980s, particularly in relation to race, identity, and urban life. Display artworks alongside relevant photographs, news clippings, and contextual information.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
@@ -80,7 +90,7 @@ export default function ExhibitionMap() {
     {
       id: 7,
       name: "7",
-      title: "Legacy and Impact",
+      title: "legacy and impact",
       description:
         "Conclude the exhibition by examining Basquiat's enduring legacy and his impact on contemporary art. Highlight the influence he has had on subsequent generations of artists and explore his continuing relevance.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
@@ -124,9 +134,23 @@ export default function ExhibitionMap() {
       </div>
       {selectedLocation && (
         <div className="exhibition__details">
-          <h3>{selectedLocation.name}</h3>
-          <h4>{selectedLocation.title}</h4>
-          <p>{selectedLocation.description}</p>
+          <h3 className="exhibition__details-name">{selectedLocation.name}</h3>
+          <h4 className="exhibition__details-title">
+            {selectedLocation.title}
+          </h4>
+          <p className="exhibition__details-text">
+            {selectedLocation.description}
+          </p>
+          <p className="exhibition__details-info">
+            highlight: {selectedLocation.info}
+          </p>
+          <div className="exhibition__details-imagecontainer">
+            <img
+              className="exhibition__details-artwork"
+              src={selectedLocation.img}
+              alt={selectedLocation.info}
+            />
+          </div>
         </div>
       )}
     </>
