@@ -123,8 +123,8 @@ function ChronoTimeline() {
         slideItemDuration={1000}
         theme={theme}
         fontSizes={{
-          cardTitle: "1.3rem",
-          title: "2rem",
+          cardTitle: "1.2rem",
+          title: "1.5rem",
           cardText: "1.5rem",
         }}
       ></Chrono>

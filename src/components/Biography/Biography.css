@@ -6,30 +6,10 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("../../assets/fonts/RALEWAY/Raleway-Medium.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.chrono {
-  font-family: "Raleway", sans-serif;
-}
-
 .biography__headline {
   font-family: "Basquiat Font", sans-serif;
   font-size: 60px;
   color: black;
   text-align: center;
   margin-top: 50px;
-}
-
-.biography__timeline-title {
-  font-family: "Basquiat Font", sans-serif;
-}
-
-.fist-text {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
 }

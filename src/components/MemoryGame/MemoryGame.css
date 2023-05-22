@@ -21,6 +21,15 @@
   margin-top: 50px;
 }
 
+.introduction-text {
+  font-weight: bolder;
+  text-align: center;
+  background-color: #b6b1ac;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
