@@ -15,16 +15,19 @@
 }
 
 .exhibition__map {
-  /* border: 2px solid black; */
   box-shadow: 7px 7px 0px -2px #f1ec7a;
-  /* border-style: groove; */
 }
 
 .location-wrapper {
-  background-color: ;
+  background-color: #f1ec7a;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .exhibition__location {
   font-family: "Basquiat Font", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }

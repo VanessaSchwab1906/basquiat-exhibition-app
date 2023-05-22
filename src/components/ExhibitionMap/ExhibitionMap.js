@@ -19,43 +19,73 @@ export default function ExhibitionMap() {
   const exhibitionLocations = [
     {
       id: 1,
-      name: "room 1",
+      name: "1",
       title: "Introduction",
       description:
         "Begin the exhibition with an introductory section that provides an overview of Basquiat's life, artistic career, and major influences. Include a brief biography and highlight key milestones in his artistic journey.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
-      x: 100,
-      y: 135,
+      x: 50,
+      y: 130,
     },
     {
       id: 2,
-      name: "room 2",
+      name: "2",
       title: "Early Influences",
       description:
         "Explore the early influences on Basquiat's work, such as his exposure to graffiti, street art, and urban culture in New York City. Include early sketches, photographs, and other materials that showcase his development as an artist.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
-      x: 100,
-      y: 30,
+      x: 150,
+      y: 0,
     },
     {
-      id: 2,
-      name: "room 3",
+      id: 3,
+      name: "3",
       title: "Themes and Motifs",
       description:
         "Dedicate sections to explore the recurring themes and motifs in Basquiat's work. This can include sections on social commentary, cultural references, personal identity, and art historical influences. Display a variety of artworks that exemplify each theme, accompanied by informative panels.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
-      x: 500,
-      y: 30,
+      x: 240,
+      y: 60,
     },
     {
-      id: 2,
-      name: "room 3",
-      title: "Themes and Motifs",
+      id: 4,
+      name: "4",
+      title: "Collaborations and Connections",
       description:
-        "Dedicate sections to explore the recurring themes and motifs in Basquiat's work. This can include sections on social commentary, cultural references, personal identity, and art historical influences. Display a variety of artworks that exemplify each theme, accompanied by informative panels.",
+        "Highlight Basquiat's collaborations with other artists, musicians, and cultural figures. Include artworks and archival materials related to his collaborations with Andy Warhol, Keith Haring, and other prominent artists of the time.",
       // img: require("../../assets/images/exhibition/room1.jpg"),
-      x: 500,
-      y: 30,
+      x: 400,
+      y: 0,
+    },
+    {
+      id: 5,
+      name: "5",
+      title: "Techniques and Materials",
+      description:
+        "Offer insight into Basquiat's artistic techniques and materials. Include examples of his use of mixed media, collage, text, and experimental approaches. Display sketches, preparatory drawings, and samples of the materials he employed.",
+      // img: require("../../assets/images/exhibition/room1.jpg"),
+      x: 350,
+      y: 125,
+    },
+    {
+      id: 6,
+      name: "6",
+      title: "Cultural Context",
+      description:
+        "Provide a section that explores the cultural and historical context in which Basquiat's work emerged. Discuss the socio-political climate of the 1980s, particularly in relation to race, identity, and urban life. Display artworks alongside relevant photographs, news clippings, and contextual information.",
+      // img: require("../../assets/images/exhibition/room1.jpg"),
+      x: 290,
+      y: 170,
+    },
+    {
+      id: 7,
+      name: "7",
+      title: "Legacy and Impact",
+      description:
+        "Conclude the exhibition by examining Basquiat's enduring legacy and his impact on contemporary art. Highlight the influence he has had on subsequent generations of artists and explore his continuing relevance.",
+      // img: require("../../assets/images/exhibition/room1.jpg"),
+      x: 200,
+      y: 200,
     },
   ];
 
