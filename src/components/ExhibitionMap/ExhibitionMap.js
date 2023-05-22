@@ -12,7 +12,9 @@ import skull from "../../assets/images/map/Skull_1981.jpeg";
 import cadillac from "../../assets/images/map/CadillacMoon_1981.jpeg";
 import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpeg";
 import heads from "../../assets/images/map/TwoHeads_1982.jpeg";
-import police from "../../assets/images/map/Policeman_1981.jpeg";
+import defacement from "../../assets/images/map/Defacement_1983.jpeg";
+import profit from "../../assets/images/map/Profit_1982.jpeg";
+import charles from "../../assets/images/map/Charles_1982.jpeg";
 
 export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -72,8 +74,8 @@ export default function ExhibitionMap() {
       title: "techniques and materials",
       description:
         "Insight into Basquiat's artistic techniques and materials, including examples of his use of mixed media, collage, text, and experimental approaches.",
-      img: police,
-      info: "irony of negro policeman, 1981",
+      img: defacement,
+      info: "defacement, 1983",
       x: 350,
       y: 125,
     },
@@ -82,8 +84,9 @@ export default function ExhibitionMap() {
       name: "6",
       title: "cultural context",
       description:
-        "Provide a section that explores the cultural and historical context in which Basquiat's work emerged. Discuss the socio-political climate of the 1980s, particularly in relation to race, identity, and urban life. Display artworks alongside relevant photographs, news clippings, and contextual information.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Explore the cultural and historical context in which Basquiat's work emerged. Get to know more about the socio-political climate of the 1980s, particularly in relation to race, identity, and urban life.",
+      img: profit,
+      info: "profit i, 1982",
       x: 290,
       y: 170,
     },
@@ -92,8 +95,9 @@ export default function ExhibitionMap() {
       name: "7",
       title: "legacy and impact",
       description:
-        "Conclude the exhibition by examining Basquiat's enduring legacy and his impact on contemporary art. Highlight the influence he has had on subsequent generations of artists and explore his continuing relevance.",
-      // img: require("../../assets/images/exhibition/room1.jpg"),
+        "Explore Basquiat's enduring legacy and his impact on contemporary art. See his influence on subsequent generations of artists and explore his continuing relevance.",
+      img: charles,
+      info: "charles the first, 1982",
       x: 200,
       y: 200,
     },
@@ -102,6 +106,9 @@ export default function ExhibitionMap() {
   return (
     <>
       <h1 className="exhibition__headline">exhibition</h1>
+      <p className="exhibition__intro">
+        click the numbers to explore the exhibition!
+      </p>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="exhibition__container" style={{ position: "relative" }}>
           <img
