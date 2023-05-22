@@ -1,6 +1,13 @@
 import { useState } from "react";
 import "./ExhibitionMap.css";
-import map from "../../assets/images/map/demo_map.jpg";
+import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
+import darkblueMap2 from "../../assets/images/map/map-darkblue-colors.JPG";
+import darkblueMap3 from "../../assets/images/map/map-darkblue.JPG";
+import lightblueMap from "../../assets/images/map/map-lightblue-colors.JPG";
+import lightblueMap2 from "../../assets/images/map/map-lightblue.JPG";
+import orangeMap from "../../assets/images/map/map-orange.JPG";
+import pinkMap from "../../assets/images/map/map-pink.JPG";
+import yellowMap from "../../assets/images/map/map-yellow.JPG";
 
 export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -58,10 +65,10 @@ export default function ExhibitionMap() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="exhibition__container" style={{ position: "relative" }}>
           <img
-            src={map}
+            src={darkblueMap}
             alt="Exhibition Map"
             className="exhibition__map"
-            style={{ maxWidth: "100%" }}
+            style={{ width: "450px" }}
           />
           {exhibitionLocations.map((location) => (
             <div

@@ -71,7 +71,8 @@
 }
 
 .card-front {
-  background-color: #1d4d9f;
+  background-color: #8cabd9;
+  border-style: groove;
   border-radius: 7px;
 }
 
@@ -81,12 +82,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 7px;
+  border-style: groove;
 }
 
 .card-back img {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 7px;
+  border-radius: 8px;
 }
 
 .moves-counter {
