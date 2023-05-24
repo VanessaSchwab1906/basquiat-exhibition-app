@@ -18,9 +18,13 @@ import charles from "../../assets/images/map/Charles_1982.jpeg";
 
 export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
 
   const handleLocationClick = (location) => {
     setSelectedLocation(location);
+  };
+  const handleImageClick = () => {
+    setIsImageExpanded(!isImageExpanded);
   };
 
   const exhibitionLocations = [
@@ -152,11 +156,32 @@ export default function ExhibitionMap() {
             highlight: {selectedLocation.info}
           </p>
           <div className="exhibition__details-imagecontainer">
-            <img
-              className="exhibition__details-artwork"
-              src={selectedLocation.img}
-              alt={selectedLocation.info}
-            />
+            {isImageExpanded ? (
+              <div className="exhibition__pop-up">
+                <span
+                  className="exhibition__close-button"
+                  onClick={handleImageClick}
+                >
+                  x
+                </span>
+                <img
+                  className="exhibition__expanded-artwork"
+                  src={selectedLocation.img}
+                  alt={selectedLocation.info}
+                />
+              </div>
+            ) : (
+              <div
+                className="exhibition__collapsed-image"
+                onClick={handleImageClick}
+              >
+                <img
+                  className="exhibition__collapsed-artwork"
+                  src={selectedLocation.img}
+                  alt={selectedLocation.info}
+                />
+              </div>
+            )}
           </div>
         </div>
       )}
