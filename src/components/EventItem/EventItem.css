@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.calendar__event-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #a3bce1;
+  margin-right: 25px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 0px -2px #f1ec7a;
+  transition: transform 0.2s ease;
+}
+
+.event-list-item:hover {
+  transform: scale(1.05);
+}
+
+.event-list-item__date {
+  font-family: "Basquiat Font";
+  font-size: 80px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.event-list-item__date-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.event-list-item__month,
+.event-list-item__day,
+.event-list-item__time {
+  font-size: 20px;
+}
+
+.event-list-item__day-time-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-list-item__tag {
+  font-weight: bold;
+}
+
+.o-linklist__link {
+  /* font-family: "Basquiat Font"; */
+  margin-top: -20px;
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  margin-right: -60px;
+  margin-top: -85px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.event-list-item__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.event-list-item__text {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.event-list-item__description {
+  font-size: 17px;
+}
+
+.AddToCalendarButton {
+  margin-top: 10px;
+}
