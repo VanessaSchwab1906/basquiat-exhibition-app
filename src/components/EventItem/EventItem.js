@@ -6,31 +6,32 @@ export default function EventItem() {
     <>
       <div className="calendar__event-wrapper">
         <li className="event-list-item">
-          <span className="event-list-item__date">26</span>
+          <span className="event-list-item__date">15</span>
           <div className="event-list-item__date-wrapper">
-            <span className="event-list-item__month">May</span>
+            <span className="event-list-item__month">October</span>
             <div className="event-list-item__day-time-wrapper">
-              <span className="event-list-item__day">Thursday</span>
-              <span className="event-list-item__time">7pm</span>
+              <span className="event-list-item__day">Sunday</span>
+              <span className="event-list-item__time">6:00 PM</span>
               <div className="event-list-item__text-wrapper">
-                <div className="event-list-item__text">
+                <div>
                   <h3>
-                    <a className="o-linklist__link">
-                      <span>Opening</span>
-                    </a>
+                    <div className="event-list-itemt__headline">
+                      <span>Vernissage</span>
+                    </div>
                   </h3>
                   <p className="event-list-item__description">
-                    with Julius von Bismarck, Nasan Tur, Böhler & Orendt, Pnar
-                    Öğrenci and „Suddenly Wonderful“
+                    Join us for the grand opening vernissage of the Jean-Michel
+                    Basquiat exhibition. Explore the captivating artworks of
+                    this iconic artist while enjoying live music and
+                    refreshments.
                   </p>
                 </div>
                 <AddToCalendarButton
-                  name="[Reminder] Test the Add to Calendar Button"
-                  startDate="2023-05-28"
-                  startTime="10:15"
-                  endTime="23:30"
-                  timeZone="America/Los_Angeles"
-                  description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
+                  name="Vernissage: Royalty, Heroism and the Streets - Jean-Michel Basquiat "
+                  startDate="2023-10-15"
+                  startTime="19:00"
+                  endTime="23:00"
+                  timeZone="Europe/Berlin"
                   options="'iCal'"
                   buttonsList
                   hideTextLabelButton
@@ -41,8 +42,46 @@ export default function EventItem() {
               </div>
             </div>
           </div>
-          <div className="event-list-item__body">
-            {/* <span className="event-list-item__tag">Vernissage</span> */}
+        </li>
+      </div>
+      <div className="calendar__event-wrapper">
+        <li className="event-list-item">
+          <span className="event-list-item__date">2</span>
+          <div className="event-list-item__date-wrapper">
+            <span className="event-list-item__month">November</span>
+            <div className="event-list-item__day-time-wrapper">
+              <span className="event-list-item__day">Thursday</span>
+              <span className="event-list-item__time">7:30 PM</span>
+              <div className="event-list-item__text-wrapper">
+                <div>
+                  <h3>
+                    <div className="event-list-itemt__headline">
+                      <span>Discussion</span>
+                    </div>
+                  </h3>
+                  <p className="event-list-item__description">
+                    Join a panel discussion exploring the intersection of art,
+                    activism, and addressing police violence. Renowned artists,
+                    activists, and scholars will engage in an insightful
+                    conversation on the role of art in raising awareness and
+                    fostering change.
+                  </p>
+                </div>
+                <AddToCalendarButton
+                  name="Vernissage: Royalty, Heroism and the Streets - Jean-Michel Basquiat "
+                  startDate="2023-11-2"
+                  startTime="19:30"
+                  endTime="23:00"
+                  timeZone="Europe/Berlin"
+                  options="'iCal'"
+                  buttonsList
+                  hideTextLabelButton
+                  buttonStyle="round"
+                  lightMode="bodyScheme"
+                  size="8|6|4"
+                />
+              </div>
+            </div>
           </div>
         </li>
       </div>
