@@ -1,39 +1,37 @@
-import "./Events.css";
+import "./EventItem.css";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
 
-export default function Events() {
+export default function EventItem() {
   return (
     <>
-      <h1 className="events__headline">events</h1>
-      <div class="calendar__event-wrapper">
-        <div class="event-list-item event-list-item__row">
-          <time class="event-list-item__left">
-            <span class="event-list-item__date">25</span>
-            <div class="event-list-item__date-wrapper">
-              <span class="event-list-item__month">Mai</span>
-              <div class="event-list-item__day-time-wrapper">
-                <span class="event-list-item__day">Donnerstag</span>
-                <span class="event-list-item__time"> 19 Uhr </span>
-              </div>
+      <div className="calendar__event-wrapper">
+        <li className="event-list-item">
+          <span className="event-list-item__date">26</span>
+          <div className="event-list-item__date-wrapper">
+            <span className="event-list-item__month">May</span>
+            <div className="event-list-item__day-time-wrapper">
+              <span className="event-list-item__day">Thursday</span>
+              <span className="event-list-item__time"> 7pm </span>
             </div>
-          </time>
-          <div class="event-list-item__body">
+          </div>
+          <div className="event-list-item__body">
             <span class="event-list-item__tag">Vernissage</span>
             <h3>
-              <a class="o-linklist__link">
+              <a className="o-linklist__link">
                 {" "}
-                <span>Eröffnung</span>
+                <span>Opening</span>
               </a>
             </h3>
-            <div class="event-list-item__text">
+            <div className="event-list-item__text">
               <p>
-                mit Julius von Bismarck, Nasan Tur, Böhler &amp;
+                with Julius von Bismarck, Nasan Tur, Böhler &amp;
                 Orendt,&nbsp;Pnar Öğrenci und „Suddenly Wonderful“
               </p>
             </div>
           </div>
-        </div>
+        </li>
       </div>
+
       <AddToCalendarButton
         name="[Reminder] Test the Add to Calendar Button"
         startDate="2023-05-28"

@@ -10,10 +10,10 @@ import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
 // import yellowMap from "../../assets/images/map/map-yellow.JPG";
 import skull from "../../assets/images/map/Skull_1981.jpeg";
 import cadillac from "../../assets/images/map/CadillacMoon_1981.jpeg";
-import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpeg";
+import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpg";
 import heads from "../../assets/images/map/TwoHeads_1982.jpeg";
 import defacement from "../../assets/images/map/Defacement_1983.jpeg";
-import profit from "../../assets/images/map/Profit_1982.jpeg";
+import profit from "../../assets/images/map/Profit_1982.jpg";
 import charles from "../../assets/images/map/Charles_1982.jpeg";
 
 export default function ExhibitionMap() {
