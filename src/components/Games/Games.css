@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../assets/fonts/RALEWAY/Raleway-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.games__headline {
+  font-family: "Basquiat Font";
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: -150px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210px;
+  height: 170px;
+  background-color: #a3bce1;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Basquiat Font";
+  font-size: 35px;
+  cursor: pointer;
+  color: black;
+  border-radius: 7px;
+  box-shadow: 7px 7px 0px -2px #f1ec7a;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box__link {
+  text-decoration: none;
+}
+
+.box__decoration {
+  font-size: 40px;
+  text-align: center;
+  color: #f08838;
+}

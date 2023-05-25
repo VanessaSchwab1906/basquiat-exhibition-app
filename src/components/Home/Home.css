@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.home__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.home__headline {
+  font-family: "Basquiat Font", sans-serif;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.home__headline-2 {
+  font-family: "Basquiat Font", sans-serif;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}

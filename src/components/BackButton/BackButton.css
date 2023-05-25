@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.back-button {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Basquiat Font;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.back-button:after {
+  content: "";
+  background-color: #f1ec7a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.back-button:hover:after {
+  top: 0px;
+  left: 0px;
+}
