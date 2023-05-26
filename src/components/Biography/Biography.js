@@ -2,69 +2,105 @@ import "./Biography.css";
 import { Chrono } from "react-chrono";
 import { useEffect, useState } from "react";
 
+const customContent = [
+  <div>
+    <h2>The Birth of a Visionary</h2>
+    <p>
+      Basquiat is born on December 22, in Brooklyn, New York City, to a Haitian
+      father and Puerto Rican mother.
+    </p>
+  </div>,
+  <div>
+    <h2>From School to Streets</h2>
+    <p>
+      Basquiat drops out of Edward R. Murrow High School in Brooklyn and begins
+      his artistic journey as a street artist, using the pseudonym SAMO (Same
+      Old Shit).
+    </p>
+  </div>,
+  <div>
+    <h2>Graffiti Revolutionaries</h2>
+    <p>
+      Basquiat gains recognition for his graffiti art in downtown Manhattan,
+      collaborating with Al Diaz under the SAMO tag. They gain attention for
+      their poetic and thought-provoking messages.
+    </p>
+  </div>,
+  <div>
+    <h2>Canvas and Creativity</h2>
+    <p>
+      Basquiat transitions from street art to canvas paintings, working in a
+      loft in downtown Manhattan. He participates in The Times Square Show, a
+      groundbreaking group exhibition showcasing emerging artists.
+    </p>
+  </div>,
+  <div>
+    <h2>Unveiling a Distinct Vision</h2>
+    <p>
+      Basquiat's first solo exhibition takes place at the Annina Nosei Gallery
+      in New York, where he gains critical acclaim for his distinct style and
+      subject matter.
+    </p>
+  </div>,
+  <div>
+    <h2>Basquiat goes Global</h2>
+    <p>
+      Basquiat's artworks are featured in major art exhibitions and galleries
+      internationally, including the Documenta 7 exhibition in Kassel, Germany,
+      and a solo exhibition at the Tony Shafrazi Gallery in New York.
+    </p>
+  </div>,
+  <div>
+    <h2>Two Worlds Collide</h2>
+    <p>
+      Basquiat collaborates with renowned artist Andy Warhol on a series of
+      paintings, fusing their distinct styles and gaining widespread attention.
+    </p>
+  </div>,
+  <div>
+    <h2>Breaking Boundarie</h2>
+    <p>
+      Basquiat's success continues to rise, and he becomes one of the youngest
+      artists to be featured in a solo exhibition at the Whitney Museum of
+      American Art in New York.
+    </p>
+  </div>,
+  <div>
+    <h2>A Tragic Loss</h2>
+    <p>
+      Tragically, on August 12, Basquiat passes away from a drug overdose at the
+      age of 27, leaving behind a significant artistic legacy.
+    </p>
+  </div>,
+];
+
 const items = [
   {
-    id: 1,
     title: "1960",
-    cardTitle: "The Birth of a Visionary",
-    cardDetailedText:
-      "Basquiat is born on December 22, in Brooklyn, New York City, to a Haitian father and Puerto Rican mother.",
   },
   {
-    id: 2,
     title: "1976",
-    cardTitle: "From School to Streets",
-    cardDetailedText:
-      "Basquiat drops out of Edward R. Murrow High School in Brooklyn and begins his artistic journey as a street artist, using the pseudonym SAMO (Same Old Shit).",
   },
   {
-    id: 3,
     title: "1978",
-    cardTitle: "Graffiti Revolutionaries",
-    cardDetailedText:
-      "Basquiat gains recognition for his graffiti art in downtown Manhattan, collaborating with Al Diaz under the SAMO tag. They gain attention for their poetic and thought-provoking messages.",
   },
   {
-    id: 4,
     title: "1980",
-    cardTitle: "Canvas and Creativity",
-    cardDetailedText:
-      "Basquiat transitions from street art to canvas paintings, working in a loft in downtown Manhattan. He participates in The Times Square Show, a groundbreaking group exhibition showcasing emerging artists.",
   },
   {
-    id: 5,
     title: "1981",
-    cardTitle: "Unveiling a Distinct Vision",
-    cardDetailedText:
-      "Basquiat's first solo exhibition takes place at the Annina Nosei Gallery in New York, where he gains critical acclaim for his distinct style and subject matter.",
   },
   {
-    id: 6,
     title: "1982",
-    cardTitle: "Basquiat goes Global",
-    cardDetailedText:
-      "Basquiat's artworks are featured in major art exhibitions and galleries internationally, including the Documenta 7 exhibition in Kassel, Germany, and a solo exhibition at the Tony Shafrazi Gallery in New York.",
   },
   {
-    id: 7,
     title: "1983",
-    cardTitle: "Two Worlds Collide",
-    cardDetailedText:
-      "Basquiat collaborates with renowned artist Andy Warhol on a series of paintings, fusing their distinct styles and gaining widespread attention.",
   },
   {
-    id: 8,
     title: "1985",
-    cardTitle: "Breaking Boundaries ",
-    cardDetailedText:
-      "Basquiat's success continues to rise, and he becomes one of the youngest artists to be featured in a solo exhibition at the Whitney Museum of American Art in New York.",
   },
   {
-    id: 9,
     title: "1987",
-    cardTitle: "A Tragic Loss",
-    cardDetailedText:
-      "Tragically, on August 12, Basquiat passes away from a drug overdose at the age of 27, leaving behind a significant artistic legacy.",
   },
 ];
 
@@ -127,7 +163,9 @@ function ChronoTimeline() {
           title: "1.5rem",
           cardText: "1.5rem",
         }}
-      ></Chrono>
+      >
+        {customContent}
+      </Chrono>
     </>
   );
 }
