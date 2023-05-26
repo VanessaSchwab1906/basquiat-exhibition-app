@@ -5,6 +5,43 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.filter-button {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Basquiat Font;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.filter-button:after {
+  content: "";
+  background-color: #f1ec7a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.filter-button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
 .calendar__event-wrapper {
   display: flex;
   align-items: flex-start;
@@ -24,11 +61,14 @@
   border-radius: 7px;
   box-shadow: 7px 7px 0px -2px #f1ec7a;
   transition: transform 0.2s ease;
-  margin-bottom: 20px;
 }
 
 .event-list-item:hover {
   transform: scale(1.05);
+}
+
+.event-list-item-workshop {
+  margin-bottom: 30px;
 }
 
 .event-list-item__date {

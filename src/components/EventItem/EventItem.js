@@ -15,11 +15,27 @@ export default function EventItem() {
   return (
     <>
       <div>
-        <button onClick={() => setFilter("All")}>All</button>
-        <button onClick={() => setFilter("Discussion")}>Discussion</button>
-        <button onClick={() => setFilter("Workshop")}>Workshop</button>
-        <button onClick={() => setFilter("Guided Tour")}>Guided Tour</button>
-        <button onClick={() => setFilter("Movie")}>Movie</button>
+        <button className="filter-button" onClick={() => setFilter("All")}>
+          all
+        </button>
+        <button
+          className="filter-button"
+          onClick={() => setFilter("Discussion")}
+        >
+          discussion
+        </button>
+        <button className="filter-button" onClick={() => setFilter("Workshop")}>
+          workshop
+        </button>
+        <button
+          className="filter-button"
+          onClick={() => setFilter("Guided Tour")}
+        >
+          guided tour
+        </button>
+        <button className="filter-button" onClick={() => setFilter("Movie")}>
+          movie
+        </button>
       </div>
 
       {filteredEvents.map((event, index) => (
@@ -76,7 +92,7 @@ function DiscussionEvent() {
 function WorkshopEvent() {
   return (
     <ul className="event-list-item__workhop-ul">
-      <li className="event-list-item">
+      <li className="event-list-item event-list-item-workshop">
         <span className="event-list-item__date">12</span>
         <div className="event-list-item__date-wrapper">
           <span className="event-list-item__month">November</span>
@@ -172,9 +188,9 @@ function GuidedTourEvent() {
                 </div>
               </h3>
               <p className="event-list-item__description">
-                Meet one curators for an exclusive guided tour through the
-                Basquiat exhibition. Gain unique perspectives on the artworks,
-                their significance, and the curation process.
+                Meet one of the curators for an exclusive guided tour through
+                the exhibition. Gain unique perspectives on the artworks, their
+                significance, and the curation process.
               </p>
             </div>
             <AddToCalendarButton
