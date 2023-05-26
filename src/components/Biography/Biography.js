@@ -17,7 +17,7 @@ const customContent = [
       Old Shit).
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">graffiti revolutionaries</h2>
     <p className="timline__text">
       Basquiat gains recognition for his graffiti art in downtown Manhattan,
@@ -25,7 +25,7 @@ const customContent = [
       their poetic and thought-provoking messages.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">canvas and creativity</h2>
     <p className="timline__text">
       Basquiat transitions from street art to canvas paintings, working in a
@@ -33,7 +33,7 @@ const customContent = [
       groundbreaking group exhibition showcasing emerging artists.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">unveiling a distinct vision</h2>
     <p className="timline__text">
       Basquiat's first solo exhibition takes place at the Annina Nosei Gallery
@@ -41,7 +41,7 @@ const customContent = [
       subject matter.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">basquiat goes global</h2>
     <p className="timline__text">
       Basquiat's artworks are featured in major art exhibitions and galleries
@@ -49,14 +49,14 @@ const customContent = [
       and a solo exhibition at the Tony Shafrazi Gallery in New York.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">two worlds collide</h2>
     <p className="timline__text">
       Basquiat collaborates with renowned artist Andy Warhol on a series of
       paintings, fusing their distinct styles and gaining widespread attention.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">breaking boundarie</h2>
     <p className="timline__text">
       Basquiat's success continues to rise, and he becomes one of the youngest
@@ -64,7 +64,7 @@ const customContent = [
       American Art in New York.
     </p>
   </div>,
-  <div>
+  <div className="timeline__wrapper">
     <h2 className="timline__headline">a tragic loss</h2>
     <p className="timline__text">
       Tragically, on August 12, Basquiat passes away from a drug overdose at the
