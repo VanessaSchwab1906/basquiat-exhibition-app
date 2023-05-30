@@ -1,37 +1,42 @@
 import "./DragAndDrop.css";
 import BackButton from "../BackButton/BackButton";
-import React, { useState } from "react";
-import Draggable from "react-draggable";
-import canvas_1 from "../../assets/images/canvas/canvas_1.PNG";
-import canvas_2 from "../../assets/images/canvas/canvas_2.PNG";
-import canvas_3 from "../../assets/images/canvas/canvas_3.PNG";
-import canvas_4 from "../../assets/images/canvas/canvas_4.PNG";
-import canvas_5 from "../../assets/images/canvas/canvas_5.PNG";
-import canvas_6 from "../../assets/images/canvas/canvas_6.PNG";
-import Drawer from "rc-drawer";
-import ReactDom from "react-dom";
+import React, { useRef } from "react";
+import { ReactSketchCanvas } from "react-sketch-canvas";
 
 export default function DragAndDrop() {
-  <Drawer>Hello</Drawer>;
+  const styles = {
+    border: "0.0625rem solid #9c9c9c",
+    borderRadius: "0.25rem",
+  };
+
+  const canvasRef = useRef(null);
+
+  const handleExportImage = () => {
+    if (canvasRef.current) {
+      canvasRef.current.exportImage("png").then((data) => {
+        const link = document.createElement("a");
+        link.href = data;
+        link.download = "myImage.png";
+        link.click();
+      });
+    }
+  };
+
+  return (
+    <>
+      <h1 className="dragndrop__headline">create your own basquiat</h1>
+      <BackButton />
+      <ReactSketchCanvas
+        style={styles}
+        width={400}
+        height={400}
+        strokeWidth={10}
+        strokeColor="red"
+        ref={canvasRef}
+        canvasColor="#8CABD9"
+        className="canvas"
+      />
+      <button onClick={handleExportImage}>Get Image</button>
+    </>
+  );
 }
-
-// export default function DragAndDrop() {
-//   const [isDropped, setIsDropped] = useState(false);
-//   const [position, setPosition] = useState({ x: 200, y: 200 });
-
-//   const handleDrop = () => {
-//     setIsDropped(true);
-//   };
-
-//   const handleDrag = (e, ui) => {
-//     setPosition({ x: ui.x, y: ui.y });
-//   };
-
-//   return (
-//     <>
-//       <h1 className="dragndrop__headline">create your own basquiat</h1>
-//       <BackButton />
-//       <div className="canvas"> </div>
-//     </>
-//   );
-// }
