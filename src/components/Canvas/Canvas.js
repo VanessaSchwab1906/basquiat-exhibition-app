@@ -109,16 +109,20 @@ export default function Canvas() {
           onChange={handleEraserWidthChange}
         />
       </div>
-      <ReactSketchCanvas
-        style={styles}
-        width={400}
-        height={400}
-        strokeWidth={strokeWidth}
-        strokeColor={strokeColor}
-        ref={canvasRef}
-        canvasColor={canvasColor}
-        className="canvas"
-      />
+      <div className="canvas-container">
+        <div className="canvas-wrapper">
+          <ReactSketchCanvas
+            style={styles}
+            width={400}
+            height={400}
+            strokeWidth={strokeWidth}
+            strokeColor={strokeColor}
+            ref={canvasRef}
+            canvasColor={canvasColor}
+            className="canvas"
+          />
+        </div>
+      </div>
 
       <div className="button-container">
         <button className="canvas-button" onClick={handleToggleEraseMode}>

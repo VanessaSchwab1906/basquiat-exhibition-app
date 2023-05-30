@@ -23,10 +23,16 @@
   margin-bottom: 10px;
 }
 
-.canvas {
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-bottom: 20px;
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .canvas__strokeColor {
