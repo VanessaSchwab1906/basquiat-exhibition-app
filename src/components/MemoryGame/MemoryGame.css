@@ -22,19 +22,18 @@
 }
 
 .introduction-text {
-  font-weight: bolder;
-  text-align: center;
   background-color: #b6b1ac;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 5px;
+  font-family: "Basquiat Font", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .card-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 
 .card {
@@ -97,6 +96,7 @@
   font-family: "Basquiat Font", sans-serif;
   font-size: 30px;
   font-weight: bolder;
+  margin-bottom: 5px;
 }
 
 .congrats-message {
@@ -124,6 +124,7 @@
   cursor: pointer;
   position: relative;
   margin-left: 20px;
+  margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;

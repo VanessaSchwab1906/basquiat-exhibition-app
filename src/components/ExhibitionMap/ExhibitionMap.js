@@ -1,13 +1,7 @@
 import { useState } from "react";
 import "./ExhibitionMap.css";
-import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
-// import darkblueMap2 from "../../assets/images/map/map-darkblue-colors.JPG";
-// import darkblueMap3 from "../../assets/images/map/map-darkblue.JPG";
-// import lightblueMap from "../../assets/images/map/map-lightblue-colors.JPG";
-// import lightblueMap2 from "../../assets/images/map/map-lightblue.JPG";
-// import orangeMap from "../../assets/images/map/map-orange.JPG";
-// import pinkMap from "../../assets/images/map/map-pink.JPG";
-// import yellowMap from "../../assets/images/map/map-yellow.JPG";
+import map from "../../assets/images/map/finalMap.png";
+// import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
 import skull from "../../assets/images/map/Skull_1981.jpeg";
 import cadillac from "../../assets/images/map/CadillacMoon_1981.jpeg";
 import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpg";
@@ -116,7 +110,7 @@ export default function ExhibitionMap() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="exhibition__container" style={{ position: "relative" }}>
           <img
-            src={darkblueMap}
+            src={map}
             alt="Exhibition Map"
             className="exhibition__map"
             style={{ width: "450px" }}

@@ -69,10 +69,10 @@ const MemoryGame = () => {
     <div>
       <h1 className="memory__headline">memory game</h1>
       <BackButton />
-      {/* <p className="introduction-text">
-        Flip the cards, uncover Basquiat's iconic art,
+      <p className="introduction-text">
+        flip the cards, uncover basquiat's iconic art
         <br /> and test your memory skills!
-      </p> */}
+      </p>
       <div className="card-grid">
         {cards.map((card, index) => (
           <div

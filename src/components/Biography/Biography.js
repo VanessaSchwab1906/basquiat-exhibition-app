@@ -107,8 +107,6 @@ function ChronoTimeline() {
   const theme = {
     primary: "#000000",
     secondary: "",
-    // cardBgColor: "#f9c1cd",
-    // cardBgColor: "#8CABD9",
     cardBgColor: "#a3bce1",
     cardTitleColor: "#000000",
     cardSubtitleColor: "#000000",
@@ -129,7 +127,7 @@ function ChronoTimeline() {
         slideItemDuration={1000}
         theme={theme}
         fontSizes={{
-          title: "1.8rem",
+          title: "2rem",
         }}
       >
         {customContent}
