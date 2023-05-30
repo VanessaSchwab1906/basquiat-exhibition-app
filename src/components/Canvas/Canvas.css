@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.canvas__headline {
+  font-family: "Basquiat Font", sans-serif;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.adjustment-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: 85px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.canvas {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.canvas__strokeColor {
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.canvas__canvasColor {
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.canvas__strokeWidth {
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.canvas__eraserWidth {
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.canvas__modeToggle {
+  font-family: "Basquiat Font", sans-serif;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: 85px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.button-container .canvas-button {
+  flex: 0 0 calc(33.33% - 10px);
+  width: 150px;
+}
+
+.canvas-button {
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: Basquiat Font;
+  letter-spacing: 1px;
+  padding: 5px 5px 5px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.canvas-button:after {
+  content: "";
+  background-color: #f08838;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.canvas-button:hover:after {
+  top: 0px;
+  left: 0px;
+}

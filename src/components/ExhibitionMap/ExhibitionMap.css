@@ -17,12 +17,10 @@
 .exhibition__intro {
   font-family: "Basquiat Font", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .exhibition__map {
-  /* border: 2px solid black; */
-  /* box-shadow: 7px 7px 0px -2px #f1ec7a; */
   border-style: groove;
 }
 
@@ -76,13 +74,6 @@
 .exhibition__details-imagecontainer {
   display: flex;
   justify-content: center;
-}
-
-.exhibition__details-artwork {
-  width: 300px;
-  height: 300px;
-  /* box-shadow: 7px 7px 0px -2px #f1ec7a; */
-  border-style: groove;
 }
 
 .exhibition__pop-up {

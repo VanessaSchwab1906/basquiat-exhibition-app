@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Basquiat Font";
+  src: url("../../assets/fonts/JEAN-MICHEL-BASQUIAT-FONT-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.filter-button {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Basquiat Font;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.filter-button:after {
+  content: "";
+  background-color: #f1ec7a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.filter-button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.calendar__event-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.event-list-item__workhop-ul {
+  padding: 0;
+}
+
+.event-list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #a3bce1;
+  margin-right: 40px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 0px -2px #f1ec7a;
+  transition: transform 0.2s ease;
+}
+
+.event-list-item:hover {
+  transform: scale(1.05);
+}
+
+.event-list-item-workshop {
+  margin-bottom: 30px;
+}
+
+.event-list-item__date {
+  font-family: "Basquiat Font";
+  font-size: 80px;
+  font-weight: bold;
+  margin-right: 18px;
+  margin-top: 10px;
+  font-size: 60px;
+}
+
+.event-list-item__date-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.event-list-item__month,
+.event-list-item__day,
+.event-list-item__time {
+  font-size: 20px;
+}
+
+.event-list-item__day-time-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-list-item__tag {
+  font-weight: bold;
+}
+
+.event-list-itemt__headline {
+  /* font-family: "Basquiat Font"; */
+  margin-top: -20px;
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  margin-right: -60px;
+  margin-top: -85px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.event-list-item__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.event-list-item__text {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  display: block;
+}
+
+.event-list-item__description {
+  font-size: 17px;
+}
+
+.AddToCalendarButton {
+  margin-top: 10px;
+}

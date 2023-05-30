@@ -13,3 +13,29 @@
   text-align: center;
   margin-top: 50px;
 }
+
+.timeline__wrapper {
+  background-color: black;
+  background-image: url("../../assets/images/backgrounds/timeline.png");
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.timline__headline {
+  font-family: "Basquiat Font";
+  font-size: 30px;
+  border-color: #f5f2a2;
+  /* border-radius: 5px; */
+  padding: 5px;
+  background-color: #f5f2a2;
+  margin: 0;
+}
+
+.timline__text {
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #f5f2a2;
+  /* border-radius: 5px; */
+  padding: 10px;
+  margin: 0;
+}
