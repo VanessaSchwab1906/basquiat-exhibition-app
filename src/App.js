@@ -8,7 +8,7 @@ import Games from "./components/Games/Games";
 import MemoryGame from "./components/MemoryGame/MemoryGame";
 import Canvas from "./components/Canvas/Canvas";
 import EventList from "./components/EventList/EventList";
-import Impressum from "./components/Impressum /Impressum";
+import Project from "./components/Project/Project";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/memory" element={<MemoryGame />} />
           <Route path="/built-your-own-basquiat" element={<Canvas />} />
           <Route path="/events" element={<EventList />} />
-          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/impressum" element={<Project />} />
         </Routes>
       </BrowserRouter>
     </>
