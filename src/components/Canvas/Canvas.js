@@ -10,7 +10,7 @@ export default function Canvas() {
 
   const canvasRef = useRef(null);
   const [eraseMode, setEraseMode] = useState(false);
-  const [strokeColor, setStrokeColor] = useState("red");
+  const [strokeColor, setStrokeColor] = useState("#F6A7B8");
   const [canvasColor, setCanvasColor] = useState("#8CABD9");
   const [strokeWidth, setStrokeWidth] = useState(10);
   const [eraserWidth, setEraserWidth] = useState(10);
@@ -77,7 +77,9 @@ export default function Canvas() {
 
   return (
     <>
-      <h1 className="canvas__headline">create your own basquiat</h1>
+      <h1 className="canvas__headline">
+        create your <br /> own basquiat
+      </h1>
       <BackButton />
       <div className="adjustment-container">
         <label className="canvas__strokeColor">stroke color</label>
@@ -117,6 +119,7 @@ export default function Canvas() {
             height={400}
             strokeWidth={strokeWidth}
             strokeColor={strokeColor}
+            eraserWidth={eraserWidth}
             ref={canvasRef}
             canvasColor={canvasColor}
             className="canvas"
@@ -126,7 +129,7 @@ export default function Canvas() {
 
       <div className="button-container">
         <button className="canvas-button" onClick={handleToggleEraseMode}>
-          {eraseMode ? "disable erase mode" : "enable erase mode"}
+          {eraseMode ? "draw mode" : "erase mode"}
         </button>
         <button className="canvas-button" onClick={handleClearCanvas}>
           clear canvas

@@ -18,6 +18,7 @@
   font-family: "Basquiat Font", sans-serif;
   text-align: center;
   font-size: 25px;
+  background-color: #b6b1ac;
 }
 
 .exhibition__map {
@@ -54,11 +55,13 @@
 
 .exhibition__details-title {
   font-family: "Basquiat Font", sans-serif;
+
   font-style: bolder;
   font-size: 25px;
 }
 
 .exhibition__details-text {
+  text-align: center;
   font-size: 20px;
   /* font-weight: bolder; */
   background-color: #8e8986;

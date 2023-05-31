@@ -30,10 +30,14 @@
 }
 
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: center;
   margin-top: 0px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5px;
 }
 
 .card {
@@ -116,20 +120,19 @@
 .restart-button {
   font-size: 20px;
   font-weight: bolder;
-  font-family: Basquiat Font;
+  font-family: "Basquiat Font";
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
   border: 2px solid black;
   cursor: pointer;
   position: relative;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: 190px;
+  display: block;
 }
 
 .restart-button:after {
@@ -146,5 +149,10 @@
 
 .restart-button:hover:after {
   top: 0px;
-  left: 0px;
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-gap: 20px;
+  }
 }

@@ -10,7 +10,7 @@ import logo from "../../assets/images/crown/orange_crown.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const options = ["biography", "exhibition", "games", "events", "impressum"];
+const options = ["biography", "exhibition", "games", "events", "project"];
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);

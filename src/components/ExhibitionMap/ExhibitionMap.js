@@ -1,14 +1,13 @@
 import { useState } from "react";
 import "./ExhibitionMap.css";
 import map from "../../assets/images/map/finalMap.png";
-// import darkblueMap from "../../assets/images/map/map-darkblue-colors-clear.JPG";
-import skull from "../../assets/images/map/Skull_1981.jpeg";
-import cadillac from "../../assets/images/map/CadillacMoon_1981.jpeg";
-import hollywood from "../../assets/images/map/HollywoodAfricans_1983.jpg";
-import heads from "../../assets/images/map/TwoHeads_1982.jpeg";
-import defacement from "../../assets/images/map/Defacement_1983.jpeg";
-import profit from "../../assets/images/map/Profit_1982.jpg";
-import charles from "../../assets/images/map/Charles_1982.jpeg";
+import skull from "../../assets/images/map/sample_3.png";
+import cadillac from "../../assets/images/map/sample_5.png";
+import hollywood from "../../assets/images/map/sample_3.png";
+import heads from "../../assets/images/map/sample_4.png";
+import defacement from "../../assets/images/map/sample_5.png";
+import profit from "../../assets/images/map/sample_6.png";
+import charles from "../../assets/images/map/sample_7.png";
 
 export default function ExhibitionMap() {
   const [selectedLocation, setSelectedLocation] = useState(null);
