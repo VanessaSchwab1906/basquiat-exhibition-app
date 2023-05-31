@@ -17,10 +17,12 @@
 .adjustment-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
-  margin-left: 85px;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  background-color: #b6b1ac;
 }
 
 .canvas-container {
@@ -58,14 +60,15 @@
 .button-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
-  margin-left: 85px;
   gap: 10px;
   margin-bottom: 10px;
 }
 
 .button-container .canvas-button {
-  flex: 0 0 calc(33.33% - 10px);
+  /* flex: 0 0 calc(33.33% - 10px); */
   width: 150px;
 }
 

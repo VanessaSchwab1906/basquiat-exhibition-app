@@ -1,3 +1,5 @@
+import "./Impressum.css";
+
 export default function Impressum() {
-  return <h1>Impressum</h1>;
+  return <h1 className="impressum__headline">impressum</h1>;
 }

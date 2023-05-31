@@ -57,7 +57,7 @@ const customContent = [
     </p>
   </div>,
   <div className="timeline__wrapper">
-    <h2 className="timline__headline">breaking boundarie</h2>
+    <h2 className="timline__headline">breaking boundaries</h2>
     <p className="timline__text">
       Basquiat's success continues to rise, and he becomes one of the youngest
       artists to be featured in a solo exhibition at the Whitney Museum of
@@ -117,6 +117,10 @@ function ChronoTimeline() {
   return (
     <>
       <h1 className="biography__headline">biography</h1>
+      <p className="biography__quote-1">
+        "i am not a black artist, i am an artist."
+      </p>
+      <p className="biography__quote-2">Jean-Michel Basquiat</p>
       <Chrono
         className="chrono"
         items={items}
@@ -127,7 +131,7 @@ function ChronoTimeline() {
         slideItemDuration={1000}
         theme={theme}
         fontSizes={{
-          title: "2rem",
+          title: "1.8rem",
         }}
       >
         {customContent}
