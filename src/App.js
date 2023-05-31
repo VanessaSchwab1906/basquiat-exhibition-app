@@ -23,7 +23,7 @@ function App() {
           <Route path="/memory" element={<MemoryGame />} />
           <Route path="/built-your-own-basquiat" element={<Canvas />} />
           <Route path="/events" element={<EventList />} />
-          <Route path="/impressum" element={<Project />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
       </BrowserRouter>
     </>

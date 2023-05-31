@@ -1,4 +1,4 @@
-# Royalty, Heroism and the Strees - Jean-Michel Basquiat
+# Royalty, Heroism and the Streets - Jean-Michel Basquiat
 
 This app is designed to enhance your experience and provide valuable information before, during or after your visit to a fictional Basquiat exhibition. With a combination of interactive features, educational content, and engaging games, I aim to provide an immersive journey into the life and artworks of the iconic artist, Jean-Michel Basquiat.
 
