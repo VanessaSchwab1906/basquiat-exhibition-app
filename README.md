@@ -25,11 +25,11 @@ Navigate the exhibition with ease using the interactive map. The map provides a 
 
 ## Games
 
-Have fun while deepening your knowledge of Basquiat's art through our entertaining and educational games. We have carefully designed two interactive games that are fun and challenge your creativity. Immerse yourself in the world of Basquiat as you play these engaging games and uncover hidden layers of artistic expression.
+Have fun while deepening your knowledge of Basquiat's art through our entertaining and educational games. I have carefully designed two interactive games that are fun and challenge your creativity. Immerse yourself in the world of Basquiat as you play these engaging games and uncover hidden layers of artistic expression.
 
 ## Events
 
-Stay up-to-date with the latest exhibition events using our events page. Browse and filter a comprehensive list of events related to the Basquiat exhibition. Whether it's a guided tour, discussion, or special workshop, you can save your favorite events to your iCalendar and ensure you don't miss out on any exciting opportunities.
+Stay up-to-date with the latest exhibition events using the events page. Browse and filter a comprehensive list of events related to the Basquiat exhibition. Whether it's a guided tour, discussion, or special workshop, you can save your favorite events to your iCalendar and ensure you don't miss out on any exciting opportunities.
 
 ## Installation
 
