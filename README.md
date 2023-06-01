@@ -13,7 +13,7 @@ This app is designed to enhance your experience and provide valuable information
 
 ## Overview
 
-The Basquiat Exhibition App is built using React. My primary goal is to create an engaging and educational experience for visitors to the exhibition. This app combines informative content with interactive features to immerse users in Basquiat's world.
+The Basquiat Exhibition App is built using React. My primary goal is to create an engaging and educational experience for visitors to the exhibition. This app combines informative content with interactive features to immerse users in Basquiat's world. Every detail, from the app's layout to the carefully chosen colors and typography, embodies Basquiat's artistic vision and distinctive style. Everything was designed in collaboration with the talented artist Mile Gligorovski.
 
 ## Biography
 
