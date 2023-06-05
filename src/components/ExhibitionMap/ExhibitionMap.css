@@ -32,6 +32,11 @@
   height: 20px;
   padding: 10px;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.location-wrapper:hover {
+  background-color: #f08838;
 }
 
 .exhibition__location {
