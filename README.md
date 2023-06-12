@@ -1,6 +1,6 @@
 # Royalty, Heroism and the Streets - Jean-Michel Basquiat
 
-This app is my finals project for the Spiced Academy Full-Stack_Development Bootcamp. I designed it to enhance your experience and provide valuable information before, during or after your visit to a fictional Basquiat exhibition. With a combination of interactive features, educational content, and engaging games, I aim to provide an immersive journey into the life and artworks of the iconic artist, Jean-Michel Basquiat.
+This app is my final project for the Spiced Academy Full-Stack_Development Bootcamp. I designed it to enhance your experience and provide valuable information before, during or after your visit to a fictional Basquiat exhibition. With a combination of interactive features, educational content, and engaging games, I aim to provide an immersive journey into the life and artworks of the iconic artist, Jean-Michel Basquiat.
 
 ## Table of Contents
 
